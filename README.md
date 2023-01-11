@@ -1,4 +1,4 @@
-# Spring Boot 3: desenvolva uma API Rest em Java
+# Spring Boot 3: aplique boas práticas e proteja uma API Rest
 
 Código do Curso de
 [Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
