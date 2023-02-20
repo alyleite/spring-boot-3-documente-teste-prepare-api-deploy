@@ -1,10 +1,9 @@
-# Spring Boot 3: aplique boas práticas e proteja uma API Rest
+# Spring Boot 3: documente, teste e prepare uma API para o deploy
 
 Código do Curso de
-[Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
+[Spring Boot 3: documente, teste e prepare uma API para o deploy](https://www.alura.com.br/curso-online-spring-boot-3-documente-teste-prepare-api-deploy)
 
-Continuação do curso [Spring Boot 3: desenvolva uma API Rest em Java](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java)
-
+Continuação do curso [Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
 O curso aborda um projeto de uma clínica médica fictícia chamada Voll Med, 
 que precisa de um aplicativo para monitorar o cadastro de médicos, pacientes e agendamento de consultas.
@@ -16,12 +15,12 @@ Fiz o curso para verificar as principais mudanças no Spring Boot 3.0
 
 ### O curso aborda os seguintes itens:
 
-* Padronizar os retornos dos controllers da API
-* Utilizar os códigos HTTP corretamente
-* Adicionar o módulo Spring Security no projeto
-* Implementar um mecanismo de autenticação na API
-* Realizar o controle de acesso na API
-* Utilizar Json Web Token para controlar o acesso na API
+* Isolar códigos de regras de negócio em uma aplicação
+* Implementar princípios SOLID
+* Documentar uma API seguindo o padrão OpenAPI
+* Escrever testes automatizados em uma aplicação com Spring Boot
+* Realizar o build de uma aplicação com Spring Boot
+* Utilizar variáveis de ambiente e prepare uma aplicação para o deploy
 
 ### Tecnologias e ferramentas utilizadas
   
