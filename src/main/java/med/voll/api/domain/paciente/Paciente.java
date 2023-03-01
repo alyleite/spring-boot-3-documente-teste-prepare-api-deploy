@@ -7,6 +7,7 @@ import med.voll.api.converter.BooleanNotNullConverter;
 import med.voll.api.domain.model.AbstractEntity;
 import med.voll.api.domain.endereco.Endereco;
 import med.voll.api.domain.paciente.dto.DadosAtualizacaoPaciente;
+import med.voll.api.domain.paciente.dto.DadosCadastroPaciente;
 import org.hibernate.Hibernate;
 
 import java.util.Objects;
@@ -36,6 +37,14 @@ public class Paciente extends AbstractEntity<Long> {
     @Convert(converter = BooleanNotNullConverter.class)
     @Setter
     private Boolean ativo;
+
+    public Paciente(DadosCadastroPaciente dadosPaciente) {
+        this.cpf = dadosPaciente.cpf();
+        this.nome = dadosPaciente.nome();
+        this.email = dadosPaciente.email();
+        this.endereco = new Endereco(dadosPaciente.endereco());
+        this.ativo = true;
+    }
 
     @Override
     public Long getId() {

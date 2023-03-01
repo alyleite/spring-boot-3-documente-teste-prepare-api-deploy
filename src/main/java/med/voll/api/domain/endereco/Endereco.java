@@ -21,6 +21,16 @@ public class Endereco {
     private String cidade;
     private String uf;
 
+    public Endereco(DadosEndereco endereco) {
+        this.bairro = endereco.bairro();
+        this.cep = endereco.cep();
+        this.uf = endereco.uf();
+        this.numero = endereco.numero();
+        this.cidade = endereco.cidade();
+        this.complemento = endereco.complemento();
+        this.logradouro = endereco.logradouro();
+    }
+
     public void atualizarInformacoes(DadosEndereco dados) {
         if (dados.logradouro() != null)
             this.logradouro = dados.logradouro();

@@ -7,9 +7,10 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.converter.BooleanNotNullConverter;
-import med.voll.api.domain.model.AbstractEntity;
 import med.voll.api.domain.endereco.Endereco;
 import med.voll.api.domain.medico.dto.DadosAtualizacaoMedico;
+import med.voll.api.domain.medico.dto.DadosCadastroMedico;
+import med.voll.api.domain.model.AbstractEntity;
 import org.hibernate.Hibernate;
 
 import java.util.Objects;
@@ -41,6 +42,16 @@ public class Medico extends AbstractEntity<Long> {
     @Column(name = "ativo", nullable = false)
     @Convert(converter = BooleanNotNullConverter.class)
     private Boolean ativo;
+
+    public Medico(DadosCadastroMedico dadosMedico) {
+        this.ativo = true;
+        this.email = dadosMedico.email();
+        this.endereco = new Endereco(dadosMedico.endereco());
+        this.nome = dadosMedico.nome();
+        this.crm = dadosMedico.crm();
+        this.especialidade = dadosMedico.especialidade();
+        this.telefone = dadosMedico.telefone();
+    }
 
     @Override
     public Long getId() {
