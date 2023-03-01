@@ -8,7 +8,7 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_DATABASE: interfit-dev
+      MYSQL_DATABASE: vol-med
       MYSQL_USER: user
       MYSQL_PASSWORD: user
       MYSQL_ROOT_PASSWORD: user
@@ -24,11 +24,11 @@ services:
       - docker-entrypoint.sh
       - mysqld
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - "8081:8081"
+#  adminer:
+#    image: adminer
+#    restart: always
+#    ports:
+#      - "8081:8081"
 
 
 #Docker Networks

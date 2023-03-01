@@ -1,5 +1,6 @@
 package med.voll.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +21,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RequestMapping("pacientes")
 @AllArgsConstructor
 @Slf4j
+@SecurityRequirement(name = "bearer-key")
 public class PacienteController extends BaseController {
 
     private final PacienteService service;
