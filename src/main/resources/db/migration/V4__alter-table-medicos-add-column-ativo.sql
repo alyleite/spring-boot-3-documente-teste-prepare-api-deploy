@@ -1,11 +1,11 @@
-alter table `vol-med`.medico add ativo tinyint;
-update `vol-med`.medico set ativo = 1;
+alter table medico add ativo tinyint;
+update medico set ativo = 1;
 
-alter table `vol-med`.paciente add ativo tinyint;
-update `vol-med`.paciente set ativo = 1;
+alter table paciente add ativo tinyint;
+update paciente set ativo = 1;
 
-ALTER TABLE `vol-med`.medico
+ALTER TABLE medico
     CHANGE COLUMN `ativo` `ativo` tinyint NOT NULL;
 
-ALTER TABLE `vol-med`.paciente
+ALTER TABLE paciente
     CHANGE COLUMN `ativo` `ativo` tinyint NOT NULL;
